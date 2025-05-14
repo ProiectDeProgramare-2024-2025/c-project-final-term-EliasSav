@@ -123,11 +123,6 @@ void citeste_nume(char* nume) {
     }
 }
 
-
-// [Nicio modificare în #include sau typedef]
-
-// Adăugare/înlocuire funcții modificate sau complet noi
-
 void afiseaza_progres(const char* progres) {
     printf(YELLOW "Progres: " RESET);
     for (int i = 0; progres[i] != '\0'; i++) {
@@ -215,7 +210,7 @@ void joc_nou(char Player_name[50]) {
             printf(YELLOW "Cuvantul era: %s%s%s\n" RESET, CYAN, cuvant, RESET);
             Sleep(3000);  // Așteaptă 3 secunde înainte de a curăța ecranul
         }
-        system("cls"); // sau "clear" pentru Linux/Mac
+        system("cls"); 
     }
 
     salveaza_scorul(Player_name, scor);
